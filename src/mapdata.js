@@ -9,7 +9,7 @@ var simplemaps_namap_mapdata={
     
     //State defaults
     state_description: "State description",
-    state_color: "#88A4BC",
+    state_color: "#f6f6f6",
     state_hover_color: "#3B729F",
     state_url: "",
     border_size: 1.5,
