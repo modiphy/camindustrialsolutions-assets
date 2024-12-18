@@ -76,7 +76,7 @@ var simplemaps_namap_mapdata={
     AB: {
       name: "Alberta",
       color: "#eb2d37",
-      description: "Calgary, Red Deer, Edmonton, Fort. Saskatchewan, Fort. McMurray, Deer",
+      description: "Calgary, Red Deer, Edmonton, Fort. Saskatchewan, Fort. McMurray",
       hover_color: "white"
     },
     AK: {
