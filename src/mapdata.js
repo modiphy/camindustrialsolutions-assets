@@ -1,8 +1,8 @@
 var simplemaps_namap_mapdata={
   main_settings: {
    //General settings
-    width: "800", //'700' or 'responsive'
-    background_color: "#FFFFFF",
+    width: 'responsive',
+    background_color: "#d2dc40",
     background_transparent: "yes",
     border_color: "#ffffff",
     popups: "detect",
@@ -34,7 +34,7 @@ var simplemaps_namap_mapdata={
     //Label defaults
     label_color: "#d5ddec",
     label_hover_color: "#d5ddec",
-    label_size: 14,
+    label_size: "10",
     label_font: "Arial",
     hide_labels: "no",
     manual_zoom: "no",
@@ -61,20 +61,23 @@ var simplemaps_namap_mapdata={
     //Advanced settings
     div: "map",
     auto_load: "yes",
-    url_new_tab: "no",
+    url_new_tab: "yes",
     images_directory: "default",
     fade_time: 0.1,
     import_labels: "no",
     link_text: "View Website",
     state_image_url: "",
     state_image_position: "",
-    location_image_url: ""
+    location_image_url: "",
+    border_hover_color: "#000000",
+    border_hover_size: "2"
   },
   state_specific: {
     AB: {
       name: "Alberta",
       color: "#eb2d37",
-      description: "Calgary, Red Deer, Edmonton, Fort. Saskatchewan, Fort. McMurray"
+      description: "Calgary, Red Deer, Edmonton, Fort. Saskatchewan, Fort. McMurray",
+      hover_color: "white"
     },
     AK: {
       inactive: "yes",
@@ -84,7 +87,8 @@ var simplemaps_namap_mapdata={
     AL: {
       name: "Alabama",
       color: "#002147",
-      description: "Burkville, McIntosh"
+      description: "Burkville, McIntosh",
+      hover_color: "white"
     },
     AR: {
       name: "Arkansas",
@@ -104,12 +108,14 @@ var simplemaps_namap_mapdata={
     CA: {
       name: "California",
       color: "#002147",
-      description: "Los Angeles, Ontario, San Francisco"
+      description: "Los Angeles, Ontario, San Francisco",
+      hover_color: "white"
     },
     CO: {
       name: "Colorado",
       description: "Denver",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white"
     },
     CT: {
       name: "Connecticut",
@@ -139,7 +145,9 @@ var simplemaps_namap_mapdata={
     HI: {
       name: "Hawaii",
       color: "#898989",
-      inactive: "yes"
+      inactive: "yes",
+      hide: "yes",
+      zoomable: "yes"
     },
     IA: {
       name: "Iowa",
@@ -174,7 +182,8 @@ var simplemaps_namap_mapdata={
     LA: {
       name: "Louisiana",
       description: "Baton Rouge, Port Allen, Plaquemine, Garyville, Scott, St. James, Uncle Sam",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white"
     },
     MA: {
       name: "Massachusetts",
@@ -214,7 +223,8 @@ var simplemaps_namap_mapdata={
     MS: {
       name: "Mississippi",
       description: "Bay St. Louis",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white"
     },
     MT: {
       name: "Montana",
@@ -229,7 +239,8 @@ var simplemaps_namap_mapdata={
     NB: {
       name: "New Brunswick",
       color: "#eb2d37",
-      description: "St. John"
+      description: "Saint John",
+      hover_color: "white"
     },
     NC: {
       name: "North Carolina",
@@ -293,8 +304,9 @@ var simplemaps_namap_mapdata={
     },
     OH: {
       name: "Ohio",
-      description: "Lima, Bellpre",
-      color: "#002147"
+      description: "Lima, Belpre",
+      color: "#002147",
+      hover_color: "white"
     },
     OK: {
       name: "Oklahoma",
@@ -304,7 +316,8 @@ var simplemaps_namap_mapdata={
     ON: {
       name: "Ontario",
       color: "#eb2d37",
-      description: "Miss"
+      description: "Mississauga",
+      hover_color: "white"
     },
     OR: {
       name: "Oregon",
@@ -334,7 +347,8 @@ var simplemaps_namap_mapdata={
     SC: {
       name: "South Carolina",
       description: "Charleston",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white"
     },
     SD: {
       name: "South Dakota",
@@ -344,17 +358,20 @@ var simplemaps_namap_mapdata={
     SK: {
       name: "Saskatchewan",
       color: "#eb2d37",
-      description: "Saskatoon, Regina"
+      description: "Saskatoon, Regina",
+      hover_color: "white"
     },
     TN: {
       name: "Tennessee",
       description: "Kingsport",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white"
     },
     TX: {
       name: "Texas",
-      description: "Houston, Longview, Corpus Christi",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white",
+      description: "Houston, Longview, Corpus Christi, Fresno, Sugarland"
     },
     UT: {
       name: "Utah",
@@ -384,7 +401,8 @@ var simplemaps_namap_mapdata={
     WV: {
       name: "West Virginia",
       description: "Parkersburg",
-      color: "#002147"
+      color: "#002147",
+      hover_color: "white"
     },
     WY: {
       name: "Wyoming",
@@ -404,7 +422,10 @@ var simplemaps_namap_mapdata={
       lng: "-95.369804",
       color: "#eb2d37",
       description: "Corporate HQ",
-      size: "35"
+      size: "35",
+      type: "star",
+      url: "https://www.google.com/maps/place/CAM+Industrial+Solutions/@29.7461582,-95.5615873,17z/data=!3m1!5s0x8640c34b4c0883b3:0x1b1b23a217c0b435!4m15!1m8!3m7!1s0x8640c3492e6e6f1d:0x92261fe43f0052f3!2sCAM+Industrial+Solutions!8m2!3d29.7465346!4d-95.5615422!10e5!16s%2Fg%2F11vj3ghm32!3m5!1s0x8640c3492e6e6f1d:0x92261fe43f0052f3!8m2!3d29.7465346!4d-95.5615422!16s%2Fg%2F11vj3ghm32?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      opacity: "10"
     },
     "1": {
       name: "Baton Rouge",
@@ -412,15 +433,19 @@ var simplemaps_namap_mapdata={
       size: "15",
       lat: "30.443319",
       lng: "-91.187492",
-      color: "#eb2d37"
+      color: "#eb2d37",
+      url: "https://www.google.com/maps/place/CAM+Industial+Solutions/@30.414524,-91.0525447,17z/data=!4m15!1m8!3m7!1s0x8626bb4ed210f0c1:0x7c9c90631492f5ef!2sCAM+Industial+Solutions!8m2!3d30.4145686!4d-91.0519815!10e5!16s%2Fg%2F11b708l26n!3m5!1s0x8626bb4ed210f0c1:0x7c9c90631492f5ef!8m2!3d30.4145686!4d-91.0519815!16s%2Fg%2F11b708l26n?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
     },
     "2": {
       name: "Calgary",
       description: "Canadian HQ",
-      size: "30",
+      size: "25",
       lat: "51.048615",
       lng: "-114.070847",
-      color: "#002147"
+      color: "#002147",
+      url: "https://www.google.com/maps/place/CAM+Industrial+Solutions+Calgary/@50.9990546,-114.0391772,718m/data=!3m2!1e3!4b1!4m6!3m5!1s0x5371719279cb78b7:0x437826753a94699a!8m2!3d50.9990546!4d-114.0366023!16s%2Fg%2F11w2jrshkk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+      type: "circle",
+      image_url: "https://www.google.com/maps/place/CAM+Industrial+Solutions+Calgary/@50.9990546,-114.0391772,718m/data=!3m2!1e3!4b1!4m6!3m5!1s0x5371719279cb78b7:0x437826753a94699a!8m2!3d50.9990546!4d-114.0366023!16s%2Fg%2F11w2jrshkk?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
     },
     "3": {
       description: "Corporate Office",
@@ -428,7 +453,8 @@ var simplemaps_namap_mapdata={
       size: "15",
       color: "#002147",
       lat: "53.544388",
-      lng: "-113.490929"
+      lng: "-113.490929",
+      url: "https://www.google.com/maps/place/CAM+Industrial+Solutions+Edmonton/@53.5448756,-113.6269464,678m/data=!3m3!1e3!4b1!5s0x53a020e179606c23:0x5fd31a953d225de1!4m6!3m5!1s0x53a0213aa843d019:0x9359ca45e5f608b3!8m2!3d53.5448756!4d-113.6243715!16s%2Fg%2F11w2ztt04b?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
     },
     "4": {
       description: "Corporate Office",
@@ -436,85 +462,66 @@ var simplemaps_namap_mapdata={
       size: "15",
       color: "#002147",
       lat: "56.726379",
-      lng: "-111.38"
+      lng: "-111.38",
+      url: "https://www.google.com/maps/place/CAM+Industrial+Solutions+LLC./@56.6807154,-111.3508731,17z/data=!4m15!1m8!3m7!1s0x53b00670fd5207cb:0x45994bc9805d509b!2sCAM+Industrial+Solutions+LLC.!8m2!3d56.680525!4d-111.350197!10e5!16s%2Fg%2F11j00rwndx!3m5!1s0x53b00670fd5207cb:0x45994bc9805d509b!8m2!3d56.680525!4d-111.350197!16s%2Fg%2F11j00rwndx?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
     }
   },
   labels: {
     NH: {
-      parent_id: "NH",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 920,
       y: 565
     },
     MA: {
-      parent_id: "MA",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 920,
       y: 590
     },
     CT: {
-      parent_id: "CT",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 920,
       y: 615
     },
     RI: {
-      parent_id: "RI",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 920,
       y: 640
     },
     MD: {
-      parent_id: "MD",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 920,
       y: 665
     },
     VT: {
-      parent_id: "VT",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 885,
       y: 590
     },
     NJ: {
-      parent_id: "NJ",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 885,
       y: 615
     },
     DE: {
-      parent_id: "DE",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 885,
       y: 640
     },
     DC: {
-      parent_id: "DC",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 885,
       y: 665
     },
     HI: {
-      parent_id: "HI",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 290,
@@ -537,16 +544,12 @@ var simplemaps_namap_mapdata={
       y: 201
     },
     PE: {
-      parent_id: "PE",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 965,
       y: 490
     },
     NS: {
-      parent_id: "NS",
-      display: "all",
       pill: "yes",
       width: 30,
       x: 965,
